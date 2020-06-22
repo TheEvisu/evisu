@@ -1,0 +1,32 @@
+body{
+    background-color: burlywood;
+    font-size: 20px;
+    font-family: 'Mansalva', cursive;
+}
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+img{
+    width: 480px;
+    height: 360px;
+    border: 3px solid;
+    border-color: black;
+    border-radius: 50%;
+}
+#asian{
+    border-color: crimson;
+}
+#african{
+    border-color: chartreuse;
+}
+
+p{
+    font-size: 24px;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 42px;
+}
