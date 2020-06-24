@@ -1,32 +1,60 @@
 body{
-    background-color: burlywood;
+    background-image: url("/images/email-pattern.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size: 20px;
-    font-family: 'Mansalva', cursive;
+    font-family: 'Freckle Face', cursive;
+
 }
-table,td,th{
+
+#imgLogo{
+    width: 100%;
+    _overflow: auto;
+    margin: 0 0 1em;
+
+}
+#merit {
     border: 1px solid black;
     border-collapse: collapse;
+
 }
 img{
-    width: 480px;
-    height: 360px;
     border: 3px solid;
-    border-color: black;
-    border-radius: 50%;
+
 }
-#asian{
-    border-color: crimson;
+#timFoto{
+    float: right;
+    border-color: cornflowerblue;
 }
-#african{
-    border-color: chartreuse;
+#LogoHTML{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10%;
+}
+#LogoURL{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10%;
+}
+#LogoHTTP{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10%;
 }
 
 p{
-    font-size: 24px;
+    font-size: 20px;
 }
 h1{
-    font-size: 60px;
+    font-size: 50px;
 }
 h2{
-    font-size: 42px;
+    font-size: 45px;
+}
+ul,ol{
+    text-align:left;
 }
