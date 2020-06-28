@@ -1,57 +1,72 @@
 body{
-    background-image: url(../images/email-pattern.png);
+    margin: 0;
+    font-family: 'IM Fell English', serif;
+    background-color: lemonchiffon;
+}
+
+.header {
+    background-image: url(../images/fon.jpg);
+    background-size: cover;
     width: 100%;
+}
+
+.header > h1{
+    font-size: 100px;
+    margin: 0;
+    text-align: center;
+    color: black;
+    padding: 130px;
+}
+.main > ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.main > ul li{
+    margin: 100px 0;
+
+    padding-bottom: 15px;
+}
+
+.main > ul h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    background-color: forestgreen;
+    text-transform: capitalize;
+    text-align: center;
+}
+.main > ul p{
+    color: black;
     font-size: 20px;
-    font-family: 'Caveat', cursive;
+    font-weight: 100;
+    text-align: center;
+    text-indent: 32px;
+    padding: 0 5px;
 }
-
-#imgLogo{
-    width: 100%;
-    _overflow: auto;
-    margin: 0 0 1em;
-
-}
-#merit {
-    border: 1px solid black;
-    border-collapse: collapse;
-
-}
-img{
-    border: 3px solid;
-
-}
-#timFoto{
-    float: right;
-    border-color: cornflowerblue;
-}
-#LogoHTML{
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10%;
-}
-#LogoURL{
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10%;
-}
-#LogoHTTP{
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10%;
-}
-
-p{
+button {
+    margin: 10px;
     font-size: 20px;
+    padding: 0 10px;
+    background: yellowgreen;
+    color: blue;
 }
-h1{
-    font-size: 50px;
+button:hover {
+    background: hsla(420, 90%, 42%, 1);
 }
-h2{
-    font-size: 45px;
+button:focus {
+    background: hsla(108, 90%, 42%, 1);
 }
-ul,ol{
-    text-align:left;
+button:active {
+    background: hsla(420, 90%, 42%, 1);
+
+}
+button:disabled {
+    background: hsla(420, 0%, 64%, 1);
+    color: hsla(420, 0%, 12%, 1);
+
+}
+button:disabled.in_ajax
+{
+    background: hsla(108, 22%, 64%, 1);
 }
