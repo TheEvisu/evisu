@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Poller One', cursive;
+    background-image: url("../imeges/sky.jpg");
+    color: whitesmoke;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(60, 69, 67, 0.6);
+    border-radius: 15px 15px 0 0;
+}
+
+nav ul {
+    list-style-type: none;
+    position: fixed;
+}
+
+nav li {
+    display: inline;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: rgba(284, 3, 35, 0.5);
+}
+
+header h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 10px 0;
+
+}
+
+footer {
+    background-color: rgba(60, 69, 67, 0.6);
+    border-radius: 0 0 15px 15px;
+    height: 50px;
+    clear: both;
+    flex: 0 0;
+    display: flex;
+}
+
+.left {
+    float: left;
+    margin-right: 15px;
+}
+
+.right {
+    float: right;
+    margin-right: 5px;
+}
+
+.right img {
+    height: 120px;
+    width: 160px;
+    box-shadow: none;
+}
+
+.farGalaxy {
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+.right {
+    border: whitesmoke 1px solid;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-align: center;
+}
+
+.button {
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgba(284, 3, 35, 0.5);
+    width: 90px;
+    position: relative;
+    left: 18em;
+    top: 8px;
+}
+
+.bold {
+    font-size: 12px;
+    color: black;
+    font-variant: small-caps;
+
+}
+
+.button > p {
+    font-size: 8px;
+    text-align: center;
+    margin: 4px 0;
+}
+
+.bottom-right {
+    border-bottom-right-radius: 15px;
+}
+
+.bottom-left {
+    border-bottom-left-radius: 15px;
+}
+
+img {
+    box-shadow: rgba(60, 69, 67, 0.6) 10px 10px;
+}
