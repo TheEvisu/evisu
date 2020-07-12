@@ -1,0 +1,217 @@
+@font-face {
+    font-family: lakeshore;
+    src: url("font/LAKESHOR-webfont.svg") format("svg");
+    src: url("font/LAKESHOR-webfont.woff") format("woff");
+}
+@font-face {
+    font-family: airstream;
+    src: url("font/Airstream-webfont.svg") format("svg");
+    src: url("font/Airstream-webfont.woff") format("woff");
+}
+
+.thumbnails-list {
+    list-style: none;/*removing dots*/
+    overflow-y: auto;
+    max-height: 25vh;
+    padding-left: 0;
+    /*margin-left: 4vw;*/
+    /*margin-right: 4vw;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.logo-title {
+    font-family: lakeshore;
+    font-size: 3em;
+    text-transform: uppercase;
+    background-color: aqua;
+    text-align: center;
+}
+.thumbnails-image {
+    width: 23vw;
+    height: 15vw;
+    display: block;
+}
+.thumbnails-title {
+    display: block;
+    text-align: center;
+    font-size: 4vw;
+    background-color: azure;
+    color: black;
+
+}
+a {
+    text-decoration: none;
+}
+.thumbnails-item {
+    border: solid 2px black;
+    margin-top: 4vw;
+
+}
+.thumbnails-item:hover {
+    transform: scale(1.1);
+    border: solid 3px aqua;
+}
+body {
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;/*possibility for growing*/
+    justify-content: space-around;
+    align-items: center;
+}
+
+.detail-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+.detail-image {
+    width: 70vw;
+    height: 55vw
+}
+.detail-title {
+    font-family: airstream;
+    font-size: 6vw;
+    background-color:aqua;
+    color: black;
+    position: absolute;
+    bottom: 1vw;
+    left: -7vw;
+
+}
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    transition: 5s;
+}
+#hide-button {
+    position: absolute;
+    top:0;
+    right:0;
+}
+.hidden.detail-container {
+    display: none;
+}
+body,html {
+    height: 100%;
+}
+.hidden.thumbnails-list {
+    flex-direction: column;
+    max-height: 80vh;
+    overflow-y: auto;
+    flex-wrap: nowrap;
+
+}
+.hidden .thumbnails-image {
+    width: 46vw;
+    height: 30vw
+
+}
+.hidden .thumbnails-item {
+    max-width: 46vw;
+}
+
+@media (min-width: 568px) {
+    #hide-button {
+        top:5vw;
+
+    }
+    .hidden.thumbnails-list {
+        flex-direction: row;
+        max-height: 90vh;
+        overflow-y: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hidden .thumbnails-image {
+        width: 20vw;
+        height: 15vw
+    }
+    .hidden .thumbnails-item {
+        max-width: 20vw;
+        margin-top: 10px;
+    }
+    .main-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .thumbnails-list {
+        flex-direction: column;
+        order: -1;
+        flex-wrap: nowrap;
+        max-height: 80vh;
+        overflow-y: auto;
+        justify-content: left;
+        overflow-x: hidden;
+        margin-top: 15px ;
+
+    }
+    .thumbnails-item {
+        margin-top: 0;
+    }
+    .thumbnails-item+.thumbnails-item {
+        margin-top: 10px
+    }
+    .logo-title {
+        margin-top: 15px;
+        margin-bottom: 3px;
+        font-size: 3.2vw;
+    }
+    .thumbnails-image {
+        width: 12vw;
+        height: 8vw;
+    }
+    .thumbnails-title {
+        font-size: 1.8vw;
+    }
+    .detail-frame {
+        flex-grow: 1;
+        position: relative;
+    }
+    .detail-image {
+        margin-top: 30px;
+        width: 55vw;
+        height: 40vw;
+    }
+    .detail-title {
+        font-size: 1.2em;
+        left: -10px;
+        font-style: italic;
+        bottom: 40px
+    }
+}
+@media (min-width: 900px) {
+    .detail-title {
+        font-size: 2.5em;
+        left: -10px;
+        bottom: 40px
+    }
+    #hide-button {
+        top: 5vh
+    }
+    .thumbnails-list {
+        margin-top: 30px ;
+    }
+    .detail-image {
+        margin-top: 30px;
+        width: 50vw;
+        height: 35vw;
+    }
+}
+.is-tiny {
+    transform: scale(0.001);
+    transition: 0ms ;
+}
