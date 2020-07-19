@@ -1,39 +1,49 @@
-
-.number1 {
-    background-color: rgb(222, 0, 0);
-    width: 250px;
-    height: 150px;
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
 }
 
-.number2 {
-    background-color: rgb(224, 120, 0);
-    width: 250px;
-    height: 150px;
+.jumbotron {
+    background-image: url("../Images/coffee-bgnd.jpeg");
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0.3em 0.3em 0.3em black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30em;
+
 }
 
-.number3 {
-    background-color: rgb(252, 182, 3);
-    width: 250px;
-    height: 150px;
+
+div {
+    margin: 100px 0;
+    border-bottom: 1px solid #e4bb97;
+    padding-bottom: 60px;
 }
 
-.number4 {
-    background-color: rgb(2, 247, 56);
-    width: 250px;
-    height: 150px;
-}
-
-.number5 {
-    background-color: rgb(2, 247, 219);
-    width: 250px;
-    height: 150px;
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    background-color: #aa8eb5;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 0.3em 0.3em 0.3em black;
+    color: #444;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: justify;
+    text-indent: 32px;
+    padding: 0 5px;
+}
+
+h1 {
     font-size: 5em;
+    color: #2CB32C;
+
 }
