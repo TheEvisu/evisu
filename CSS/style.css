@@ -1,49 +1,16 @@
-body {
-    margin: 0;
-    background-color: whitesmoke;
-    font-family: 'Raleway', sans-serif;
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
-.jumbotron {
-    background-image: url("../Images/coffee-bgnd.jpeg");
+
+.jumbotron{
+    background-image: url("../image/1.jpg");
+    height: 35em;
     color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
     text-shadow: 0.3em 0.3em 0.3em black;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 30em;
-
-}
-
-
-div {
-    margin: 10px 0;
-    border-bottom: 1px solid #e4bb97;
-    padding-bottom: 60px;
-}
-
-h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 28px;
-    background-color: #aa8eb5;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-p {
-    color: #444;
-    font-size: 20px;
-    font-weight: 100;
-    text-align: justify;
-    text-indent: 32px;
-    padding: 0 5px;
-}
-
-h1 {
-    font-size: 5em;
-    color: #2CB32C;
-
 }
